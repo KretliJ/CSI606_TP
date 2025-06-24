@@ -24,13 +24,13 @@
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
+  N/A (24/06)
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Protótipo de _landing page_ em desenvolvimento (24/06)
 
 ### 5. Referências
 
-  padrão ABNT.
+  N/A (24/06)
