@@ -21,10 +21,12 @@
   * O usuário cuja conta registrou uma votação, deve ser capaz de compartilhar a mesma para outros usuários, de forma externa (e-mail ou link).
   * O usuário cuja conta registrou uma votação deve ser capaz de ver o progresso atual da votação.
   * O sistema deve registrar um ID único para cada "cédula" de votação, onde o ID criptografado de cada conta será usado para garantir que cada voto seja único e anônimo.
+  +
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  N/A (24/06)
+  * O sistema será desenvolvido utilizando apenas tecnologias web open-source.
+  +
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
@@ -34,3 +36,4 @@
 ### 5. Referências
 
   N/A (24/06)
+  +
