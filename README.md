@@ -8,7 +8,6 @@
  
   Esta proposta de trabalho final visa definir tema, escopo, restições e referências para o desenvolvimento de um sistema web relevante ao tema de sistema de votação universal.
 
-
 ### 1. Tema
 
   Este trabalho final tem como tema o desenvolvimento de um sistema de votação universal.
@@ -21,19 +20,20 @@
   * O usuário cuja conta registrou uma votação, deve ser capaz de compartilhar a mesma para outros usuários, de forma externa (e-mail ou link).
   * O usuário cuja conta registrou uma votação deve ser capaz de ver o progresso atual da votação.
   * O sistema deve registrar um ID único para cada "cédula" de votação, onde o ID criptografado de cada conta será usado para garantir que cada voto seja único e anônimo.
-  +
+  
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
   * O sistema será desenvolvido utilizando apenas tecnologias web open-source.
-  +
+  
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
   Protótipo de _landing page_ em desenvolvimento (24/06)
+  Protótipo de página de login em desenvolvimento (30/06)
 
 ### 5. Referências
 
-  N/A (24/06)
-  +
+  * How To Make Sign In & Sign Up Form Using React JS | ReactJS Login & Registration Form(https://www.youtube.com/watch?v=8QgQKRcAUvM) (30/06)
+  
