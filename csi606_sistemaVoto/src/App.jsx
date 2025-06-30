@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { useState } from "react";
 import Landing from "./landing/landing";
 import About from "./about/about";
-import Login from "./components/LoginSignup/LoginSignup";
+import Login from "./LoginSignup/LoginSignup";
 
 function App() {
   const [count, setCount] = useState(0);

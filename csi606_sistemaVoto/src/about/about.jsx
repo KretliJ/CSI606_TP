@@ -7,14 +7,21 @@ function about() {
         <h1 className="text-black"> Sistema votação v1.2 </h1>
       </div>
       <p className="flex p-8 items-center justify-center">
-        <Link
-          to="/"
-          className="flex items-center justify-center border-black border-2 rounded-xl text-black bg-gray-200 changehover w-36"
+        <div
+          class="text-black p-0"
+          style={{ position: "absolute", top: 10, left: 10 }}
         >
-          {" "}
-          <br></br>
-          <div>Clique para voltar</div>
-        </Link>
+          <Link to="/">
+            <button
+              id="returntolandingbutton"
+              className="btn btn-sm"
+              type="button"
+              style={{ padding: 8 }}
+            >
+              Voltar
+            </button>
+          </Link>
+        </div>
       </p>
     </body>
   );

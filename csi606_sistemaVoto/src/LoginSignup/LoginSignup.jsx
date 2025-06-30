@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./LoginSignup.css";
-import user_ico from "../assets/person.png";
-import email_ico from "../assets/email.png";
-import password_ico from "../assets/password.png";
+import user_ico from "../components/assets/person.png";
+import email_ico from "../components/assets/email.png";
+import password_ico from "../components/assets/password.png";
 
 const LoginSignup = () => {
   const [action, setAction] = useState("Cadastrar");
@@ -78,6 +79,21 @@ const LoginSignup = () => {
         >
           Entrar
         </div>
+      </div>
+      <div
+        class="text-black p-0"
+        style={{ position: "absolute", top: 10, left: 10 }}
+      >
+        <Link to="/">
+          <button
+            id="returntolandingbutton"
+            className="btn btn-sm"
+            type="button"
+            style={{ padding: 8 }}
+          >
+            Voltar
+          </button>
+        </Link>
       </div>
     </div>
   );
