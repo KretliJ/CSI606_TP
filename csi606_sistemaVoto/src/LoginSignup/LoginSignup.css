@@ -10,8 +10,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  border-radius: 20px;
   margin: top 200px;
-  width: 600px;
+  width: 80%;
+  height: 80%;
   background: rgba(255, 255, 255, 0.2);
   padding-bottom: 30px;
 }
@@ -21,14 +23,17 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 9px;
+  margin-top: 10px;
   width: 100%;
-  margin-top: 30px;
+  height: 100%;
 }
 
 .text {
   color: white;
   font-size: 40px;
   font-weight: 700;
+  width: 80%;
+  height: 80%;
 }
 
 .underline {
@@ -49,8 +54,8 @@ body {
   display: flex;
   align-items: center;
   margin: auto;
-  width: 480px;
-  height: 80px;
+  width: 80%;
+  height: 80%;
   background: #454545;
   border-radius: 6px;
 }
@@ -66,18 +71,22 @@ body {
   border: none;
   outline: none;
   color: white;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .forgot-password {
   padding-right: 300px;
-  margin-top: 27px;
+  margin-top: 20px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+  width: 60%;
+  height: auto;
 }
 
 .submit-container {
   display: flex;
+  width: 80%;
+  height: 80%;
   gap: 30px;
   margin: 60px auto;
 }
