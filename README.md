@@ -30,10 +30,15 @@
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipo de _landing page_ em desenvolvimento (24/06)
-  Protótipo de página de login em desenvolvimento (30/06)
+  v1.1 Protótipo de _landing page_ em desenvolvimento (24/06)
+  v1.2 Protótipo de página de login em desenvolvimento (30/06)
+  v1.3 Página de login finalizada (09/08)
+  v1.4 Integração com o firebase para adicionar e recuperar usuários (09/08)
+  v1.5 Adicionado login persistente (09/08)
 
+  
 ### 5. Referências
 
-  * How To Make Sign In & Sign Up Form Using React JS | ReactJS Login & Registration Form(https://www.youtube.com/watch?v=8QgQKRcAUvM) (30/06)
+  * How To Make Sign In & Sign Up Form Using React JS | ReactJS Login & Registration Form (https://www.youtube.com/watch?v=8QgQKRcAUvM)
+  * Firebase Auth with React Step-by-Step Tutorial || Login Register auth with firebase React Firestore (https://www.youtube.com/watch?v=GE27BkUZbXk)
   
