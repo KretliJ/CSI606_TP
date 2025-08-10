@@ -31,9 +31,13 @@
 ### 4. Protótipo
 
   v1.1 Protótipo de _landing page_ em desenvolvimento (24/06)
+  
   v1.2 Protótipo de página de login em desenvolvimento (30/06)
+  
   v1.3 Página de login finalizada (09/08)
+  
   v1.4 Integração com o firebase para adicionar e recuperar usuários (09/08)
+  
   v1.5 Adicionado login persistente (09/08)
 
   
