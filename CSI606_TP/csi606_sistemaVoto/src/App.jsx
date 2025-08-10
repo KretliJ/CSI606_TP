@@ -1,22 +1,38 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { useState } from "react";
-import Landing from "./landing/landing";
-import About from "./about/about";
-import Login from "./LoginSignup/LoginSignup";
+import { AuthProvider, useAuth } from "./context/AuthContext";
+import Landing from "./components/landing/landing";
+import About from "./components/about/about";
+import Login from "./components/LoginSignup/LoginSignup";
+import Profile from "./components/profile/profile";
 
-function App() {
-  const [count, setCount] = useState(0);
+function AppRoutes() {
+  const { currentUser } = useAuth(); // Pega o usuário do contexto
 
   return (
-    <>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/about" element={<About />} />
+
+      <Route
+        path="/login"
+        element={currentUser ? <Navigate to="/profile" /> : <Login />}
+      />
+
+      <Route
+        path="/profile"
+        element={currentUser ? <Profile /> : <Navigate to="/login" />}
+      />
+    </Routes>
+  );
+}
+
+function App() {
+  return (
+    <AuthProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
+        <AppRoutes />
       </BrowserRouter>
-    </>
+    </AuthProvider>
   );
 }
 
