@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import { useAuth } from "../../context/AuthContext";
+import { auth } from "../firebase";
+import "../../App.css";
 
 function landing() {
   const [count, setCount] = useState(0);
+  const { currentUser } = useAuth();
 
   return (
     <>
@@ -19,18 +22,41 @@ function landing() {
         }}
       >
         <div style={{ padding: 8, position: "absolute", right: 0 }}>
-          <Link to="/Login">
-            <button
-              id="profilebutton"
-              className="btn btn-sm"
-              type="button"
-              style={{ padding: 8 }}
-            >
-              Fazer login{" "}
-            </button>
-          </Link>
+          {currentUser ? (
+            <>
+              <Link to="/profile">
+                <button
+                  className="btn btn-sm"
+                  style={{
+                    padding: 8,
+                    position: "absolute",
+                    right: 90,
+                    width: 100,
+                  }}
+                >
+                  Meu perfil
+                </button>
+              </Link>
+            </>
+          ) : (
+            <Link to="/Login">
+              <button
+                id="profilebutton"
+                className="btn btn-sm"
+                type="button"
+                style={{
+                  padding: 8,
+                  position: "absolute",
+                  right: 90,
+                  width: 100,
+                }}
+              >
+                Fazer login{" "}
+              </button>
+            </Link>
+          )}
         </div>
-        <div style={{ padding: 8, position: "absolute", right: 100 }}>
+        <div style={{ padding: 8, position: "absolute", right: 0 }}>
           <div style={{ padding: 8, display: "inline" }}>
             <Link to="/About">
               <button
@@ -48,6 +74,21 @@ function landing() {
         </div>
       </header>
       <div className="container">
+        {currentUser ? (
+          <h2
+            style={{
+              padding: 8,
+              position: "relative",
+              left: 50,
+              top: 0,
+              width: 300,
+            }}
+          >
+            Olá, {currentUser.displayName || currentUser.email}
+          </h2>
+        ) : (
+          <div></div>
+        )}
         <div id="main" className="wrapper" style={{ right: 30 }}>
           <input
             type="text"
