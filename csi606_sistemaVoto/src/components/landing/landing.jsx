@@ -1,12 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import { auth } from "../firebase";
 import "../../App.css";
 
-function landing() {
-  const [count, setCount] = useState(0);
+function Landing() {
+  const [searchId, setSearchId] = useState("");
   const { currentUser } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    if (searchId.trim() !== "") {
+      navigate(`/poll/${searchId}`);
+    }
+  };
 
   return (
     <>
@@ -94,6 +100,8 @@ function landing() {
             type="text"
             id="search"
             placeholder="Digite aqui o ID da votação para buscar"
+            value={searchId}
+            onChange={(e) => setSearchId(e.target.value)}
           />
           <button
             className="wrapper"
@@ -104,6 +112,7 @@ function landing() {
               borderRadius: 15,
               height: 43,
             }}
+            onClick={handleSearch}
           >
             <svg
               style={{ display: "inline" }}
@@ -117,7 +126,7 @@ function landing() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path stroke="none" d="M00h24v24H0z" fill="none"></path>
+              <path stroke="none" fill="none"></path>
               <path d="M5 12l14 0"></path>
               <path d="M13 18l6 -6"></path>
               <path d="M13 6l6 6"></path>
@@ -125,36 +134,40 @@ function landing() {
           </button>
         </div>
         <div style={{ position: "relative", bottom: -10 }}>
-          <button
-            id="votacaobutton"
-            className="btn btn-sm"
-            type="button"
-            style={{
-              padding: 8,
-              margin: 8,
-              width: "40%",
-              display: "inline-block",
-            }}
-          >
-            Criar votação
-          </button>
-          <button
-            id="votacaouserbutton"
-            className="btn btn-sm"
-            type="button"
-            style={{
-              padding: 8,
-              margin: 8,
-              width: "40%",
-              display: "inline-block",
-            }}
-          >
-            Minhas votações
-          </button>
+          <Link to="/userpoll">
+            <button
+              id="votacaobutton"
+              className="btn btn-sm"
+              type="button"
+              style={{
+                padding: 8,
+                margin: 8,
+                width: "40%",
+                display: "inline-block",
+              }}
+            >
+              Criar votação
+            </button>
+          </Link>
+          <Link to="/mypolls">
+            <button
+              id="votacaouserbutton"
+              className="btn btn-sm"
+              type="button"
+              style={{
+                padding: 8,
+                margin: 8,
+                width: "40%",
+                display: "inline-block",
+              }}
+            >
+              Minhas votações
+            </button>
+          </Link>
         </div>
       </div>
     </>
   );
 }
 
-export default landing;
+export default Landing;

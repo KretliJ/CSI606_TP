@@ -11,7 +11,7 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
-// Cria o componente "Provedor" que vai envolver sua aplicação
+// Cria o componente "Provedor" que vai envolver a aplicação
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true); // Para esperar o Firebase verificar o status
