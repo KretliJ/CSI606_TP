@@ -40,9 +40,11 @@
   
   v1.5 Adicionado login persistente (09/08)
 
+  v1.6 Adicionadas funcionalidades de criar votação, apagar votação e pesquisar votação (19/08)
   
 ### 5. Referências
 
   * How To Make Sign In & Sign Up Form Using React JS | ReactJS Login & Registration Form (https://www.youtube.com/watch?v=8QgQKRcAUvM)
   * Firebase Auth with React Step-by-Step Tutorial || Login Register auth with firebase React Firestore (https://www.youtube.com/watch?v=GE27BkUZbXk)
+  * How to Build a Voting App with Firebase and React | Unique Voter ID Authentication (https://www.youtube.com/watch?v=H3Nxt8Z0YEQ)
   
