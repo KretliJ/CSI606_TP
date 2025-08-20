@@ -4,7 +4,7 @@ function about() {
   return (
     <body className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="container bg-amber-50 border-2 border-black rounded-xl p-8 text-center">
-        <h1 className="text-black"> Sistema votação v1.5 </h1>
+        <h1 className="text-black"> Sistema votação v1.6 </h1>
         <p style={{ fontSize: 20, position: "relative" }}>
           -A student's project by Jonas Kretli
         </p>
