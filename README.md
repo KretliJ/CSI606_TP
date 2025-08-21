@@ -25,6 +25,8 @@
 ### 3. Restrições
 
   * O sistema será desenvolvido utilizando apenas tecnologias web open-source.
+  * O frontend do sistema será desenvolvido em react com JavaScript.
+  * O backend utilizado será o google firebase.
   
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
@@ -44,6 +46,7 @@
   
 ### 5. Referências
 
+  * Material disciplina CSI606
   * How To Make Sign In & Sign Up Form Using React JS | ReactJS Login & Registration Form (https://www.youtube.com/watch?v=8QgQKRcAUvM)
   * Firebase Auth with React Step-by-Step Tutorial || Login Register auth with firebase React Firestore (https://www.youtube.com/watch?v=GE27BkUZbXk)
   * How to Build a Voting App with Firebase and React | Unique Voter ID Authentication (https://www.youtube.com/watch?v=H3Nxt8Z0YEQ)
